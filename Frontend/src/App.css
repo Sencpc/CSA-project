@@ -1,0 +1,119 @@
+.service-item.sortable-ghost {
+  opacity: 0.4;
+  background-color: #cce7ff;
+  border: 1px dashed #4a90e2;
+}
+
+.service-item.sortable-chosen {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
+}
+
+.drop-slot .placeholder-text {
+  pointer-events: none;
+}
+
+.service-item.sortable-ghost {
+  opacity: 0.4;
+  background-color: #cce7ff;
+  border: 1px dashed #4a90e2;
+}
+
+.service-item.sortable-chosen {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
+}
+
+.drop-slot .placeholder-text {
+  pointer-events: none;
+}
+
+.sectionTitle{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+:root{
+  --container-max-width: 1200px;
+  --gutter: 16px;
+}
+.container{
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--gutter));
+  padding-right: calc(var(--gutter));
+}
+
+img, video, svg, .responsive-img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.col{
+  flex: 1 1 0;
+  min-width: 0;
+}
+.col-auto{
+  flex: 0 0 auto;
+}
+
+.service-item{
+  max-width: 100%;
+  word-break: break-word;
+}
+
+@media (max-width: 1024px){
+  .sectionTitle{ font-size: 1rem; }
+  .service-item.sortable-chosen{ transform: scale(1.03); }
+}
+
+@media (max-width: 768px){
+  :root{ --gutter: 12px; }
+  .sectionTitle{ font-size: 0.98rem; }
+  .sidebar, .AdminLayout, .CustomerLayout, .CustomerSidebar{
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .service-item.sortable-chosen{ transform: scale(1.02); }
+}
+
+@media (max-width: 480px){
+  :root{ --gutter: 10px; }
+  html, body{ -webkit-text-size-adjust: 100%; }
+  .sectionTitle{ font-size: 0.95rem; }
+  button, .btn{
+    min-height: 40px;
+    padding: 10px 12px;
+  }
+  .service-item.sortable-chosen{ box-shadow: none; transform: none; }
+}
+
+.info-card{
+  background-color: rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 480px){
+  .info-card{ padding: 12px; }
+}
+
+.footer-info{
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+
